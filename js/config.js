@@ -110,12 +110,8 @@ const API_SITES = {
         api: 'https://ikunzyapi.com/api.php/provide/vod',
         name: 'iKun资源'
     },
-    testSource: {
-        api: 'https://www.example.com/api.php/provide/vod',
-        name: '空内容测试源',
-        adult: true
+    
     // 下面这些是从零度博客中添加的API源
-    },
     ftys: {
         api: 'https://www.fantuan.tv/api.php/provide/vod/',
         name: '饭团影视',
