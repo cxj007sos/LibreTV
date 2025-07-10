@@ -28,8 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // 设置默认API选择（如果是第一次加载）
     if (!localStorage.getItem('hasInitializedDefaults')) {
         // 默认选中资源
-        selectedAPIs = ["tyyszy", "bfzy", "dyttzy", "ruyi"];
-        localStorage.setItem('selectedAPIs', JSON.stringify(selectedAPIs));
+        // selectedAPIs = ["tyyszy", "bfzy", "dyttzy", "ruyi"];
+        // localStorage.setItem('selectedAPIs', JSON.stringify(selectedAPIs));
+        // ————————————————上面是原始默认选项————————————————
+        // 第一个 true 表示全选，第二个 true 表示排除成人内容
+        selectAllAPIs(true, true);
 
         // 默认选中过滤开关
         localStorage.setItem('yellowFilterEnabled', 'true');
